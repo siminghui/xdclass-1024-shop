@@ -1,7 +1,9 @@
 package com.siminghui.controller;
 
 
+import com.siminghui.model.AddressDO;
 import com.siminghui.service.AddressService;
+import com.siminghui.util.JsonData;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -33,7 +35,9 @@ public class AddressController {
     public Object detail(@ApiParam(value = "地址id",required = true)
                          @PathVariable("address_id") long addressId) {
 
-        return addressService.detail(addressId);
+        AddressDO addressDO = addressService.detail(addressId);
+
+        return JsonData.buildSuccess(addressDO);
 
     }
 
