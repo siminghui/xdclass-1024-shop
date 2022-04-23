@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/pom.xml" afterDir="false" />
+    <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/config/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/config/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/config/SwaggerConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/config/SwaggerConfiguration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -44,10 +41,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,20 +58,65 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.3325" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service" />
+      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model" />
+      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/mapper" />
+      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.siminghui.db.MyBatisPlusGenerator" />
+      <module name="xdclass-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.siminghui.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.siminghui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.siminghui.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Application.MyBatisPlusGenerator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,7 +126,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650546656242</updated>
-      <workItem from="1650546658390" duration="4852000" />
+      <workItem from="1650546658390" duration="5973000" />
+      <workItem from="1650613333690" duration="11605000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
@@ -104,6 +152,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b" />
