@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/JsonData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650546656242</updated>
       <workItem from="1650546658390" duration="5973000" />
-      <workItem from="1650613333690" duration="12338000" />
+      <workItem from="1650613333690" duration="13317000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>

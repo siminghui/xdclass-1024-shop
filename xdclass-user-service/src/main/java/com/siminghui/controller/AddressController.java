@@ -1,6 +1,7 @@
 package com.siminghui.controller;
 
 
+import com.siminghui.exception.BizException;
 import com.siminghui.model.AddressDO;
 import com.siminghui.service.AddressService;
 import com.siminghui.util.JsonData;
@@ -36,6 +37,11 @@ public class AddressController {
                          @PathVariable("address_id") long addressId) {
 
         AddressDO addressDO = addressService.detail(addressId);
+
+        //int i = 1/0;
+        //if (addressId == 1) {
+        //    throw new BizException(-1,"测试自定义异常");
+        //}
 
         return JsonData.buildSuccess(addressDO);
 
