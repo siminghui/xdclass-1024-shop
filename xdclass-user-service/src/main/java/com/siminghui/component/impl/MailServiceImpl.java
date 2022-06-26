@@ -1,6 +1,6 @@
-package com.siminghui.service.impl;
+package com.siminghui.component.impl;
 
-import com.siminghui.service.MailService;
+import com.siminghui.component.MailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

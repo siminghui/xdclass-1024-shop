@@ -1,4 +1,4 @@
-package com.siminghui.service;
+package com.siminghui.component;
 
 /**
  * @Author: 十七

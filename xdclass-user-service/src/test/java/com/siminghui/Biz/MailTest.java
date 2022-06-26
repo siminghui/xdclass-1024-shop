@@ -1,7 +1,7 @@
 package com.siminghui.Biz;
 
 import com.siminghui.UserApplication;
-import com.siminghui.service.MailService;
+import com.siminghui.component.MailService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
