@@ -10,6 +10,14 @@ import com.siminghui.util.JsonData;
  */
 public interface NotifyService {
 
+    /**
+     * 发送验证码
+     * @param sendCodeEnum
+     * @param to
+     * @return
+     */
     JsonData sendCode(SendCodeEnum sendCodeEnum, String to);
+
+    Boolean checkCode(SendCodeEnum sendCodeEnum, String to, String code);
 
 }

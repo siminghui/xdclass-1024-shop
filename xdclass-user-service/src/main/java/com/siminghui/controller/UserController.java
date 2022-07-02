@@ -2,11 +2,14 @@ package com.siminghui.controller;
 
 
 import com.siminghui.enums.BizCodeEnum;
+import com.siminghui.request.UserRegisterRequest;
 import com.siminghui.service.FileService;
+import com.siminghui.service.UserService;
 import com.siminghui.util.JsonData;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -27,6 +30,9 @@ public class UserController {
     @Autowired
     private FileService fileService;
 
+    @Autowired
+    private UserService userService;
+
     /**
      * 上传用户的头像
      *
@@ -43,6 +49,15 @@ public class UserController {
 
         return result != null? JsonData.buildSuccess(result) : JsonData.buildResult(BizCodeEnum.FILE_UPLOAD_USER_IMG_FAIL);
 
+    }
+
+    @ApiOperation("用户注册")
+    @PostMapping("register")
+    public JsonData register(@ApiParam("用户注册对象") @RequestBody UserRegisterRequest request) {
+
+        JsonData jsonData = userService.register(request);
+
+        return jsonData;
     }
 
 }

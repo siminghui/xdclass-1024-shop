@@ -10,31 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/constant/CacheKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/OssConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/UserRegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdclass-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/util/CommonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/util/CommonUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/NotifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/NotifyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/NotifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/NotifyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/NotifyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/NotifyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/NotifyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/NotifyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/model/UserDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/model/UserDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/MailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/MailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/Biz/MailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/Biz/MailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/NotifyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/NotifyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/NotifyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/NotifyServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,20 +108,7 @@
       <command value="open gmc-nurse-station-back-end" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
-    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.siminghui.db.MyBatisPlusGenerator" />
-      <module name="xdclass-user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.siminghui.db.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MD5Test.testMD5">
     <configuration name="NotifyServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.siminghui.service.impl.NotifyServiceImpl" />
       <module name="xdclass-user-service" />
@@ -175,6 +149,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MD5Test.testMD5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.siminghui.Biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.siminghui.Biz" />
+      <option name="MAIN_CLASS_NAME" value="com.siminghui.Biz.MD5Test" />
+      <option name="METHOD_NAME" value="testMD5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MailTest.testSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xdclass-user-service" />
       <extension name="coverage">
@@ -206,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MD5Test.testMD5" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Application.NotifyServiceImpl" />
         <item itemvalue="JUnit.MailTest.testSendMail" />
         <item itemvalue="JUnit.AddressTest.testAddressDetail" />
-        <item itemvalue="Application.MyBatisPlusGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +225,7 @@
       <workItem from="1656723965941" duration="3330000" />
       <workItem from="1656727333776" duration="1783000" />
       <workItem from="1656729142616" duration="358000" />
-      <workItem from="1656729523326" duration="8170000" />
+      <workItem from="1656729523326" duration="11723000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>

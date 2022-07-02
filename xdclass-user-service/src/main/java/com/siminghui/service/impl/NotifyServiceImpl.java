@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -34,7 +35,7 @@ public class NotifyServiceImpl implements NotifyService {
     /**
      * 验证码的内容
      */
-    private static final String CONTENT = "您的验证码是%s,有效时间是60s";
+    private static final String CONTENT = "您的验证码是%s,有效时间是10min";
 
     /**
      * 10分钟有效
@@ -92,5 +93,31 @@ public class NotifyServiceImpl implements NotifyService {
 
         return JsonData.buildResult(BizCodeEnum.CODE_TO_ERROR);
 
+    }
+
+    /**
+     * 验证验证码
+     * @param sendCodeEnum
+     * @param to
+     * @param code
+     * @return
+     */
+    @Override
+    public Boolean checkCode(SendCodeEnum sendCodeEnum, String to, String code) {
+        String cacheKey = String.format(CacheKey.CHECK_CODE_KEY, sendCodeEnum.name(), to);
+
+        String cacheValue = redisTemplate.opsForValue().get(cacheKey);
+        if (StringUtils.isNotBlank(cacheValue)) {
+
+            String cacheCode = cacheValue.split("_")[0];
+            if (Objects.equals(cacheCode, code)) {
+                // 删除key
+                redisTemplate.delete(cacheKey);
+                return true;
+            }
+
+        }
+
+        return false;
     }
 }
