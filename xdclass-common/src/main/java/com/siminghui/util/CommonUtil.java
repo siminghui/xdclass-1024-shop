@@ -5,6 +5,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.security.MessageDigest;
 import java.util.Random;
+import java.util.UUID;
 
 /**
  * @Author: 十七
@@ -89,4 +90,22 @@ public class CommonUtil {
          }
         return sb.toString();
      }
+
+    /**
+     * 获取当前时间戳
+     * @return
+     */
+     public static long getCurrentTimestamp() {
+         return System.currentTimeMillis();
+     }
+
+
+    /**
+     * 生成UUID
+     * @return
+     */
+    public static String generateUUID() {
+
+         return UUID.randomUUID().toString().replaceAll("-", "").substring(0,32);
+    }
 }

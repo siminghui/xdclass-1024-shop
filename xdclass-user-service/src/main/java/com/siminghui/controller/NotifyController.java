@@ -97,6 +97,7 @@ public class NotifyController {
 
         String key = getCaptChakey(request);
         String cacheCaptCha = redisTemplate.opsForValue().get(key);
+        log.info("controller-cacheCaptCha:{}", cacheCaptCha);
 
         // 匹配图形验证码是否一样
         if (Objects.nonNull(captCha) && Objects.nonNull(cacheCaptCha) && Objects.equals(captCha, cacheCaptCha)) {

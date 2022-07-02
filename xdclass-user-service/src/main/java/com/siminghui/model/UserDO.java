@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author 十七
@@ -67,6 +67,8 @@ public class UserDO implements Serializable {
      * 盐，用于个人敏感信息处理
      */
     private String secret;
+
+    private String testDevTool;
 
 
 }
