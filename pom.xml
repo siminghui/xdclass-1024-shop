@@ -104,6 +104,13 @@
                 <version>${commons.codec.version}</version>
             </dependency>
 
+            <!-- JWT相关 -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>0.7.0</version>
+            </dependency>
+
             <!--接口文档依赖-->
             <dependency>
                 <groupId>io.springfox</groupId>

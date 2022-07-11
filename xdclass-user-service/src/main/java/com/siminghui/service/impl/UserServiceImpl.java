@@ -1,13 +1,17 @@
 package com.siminghui.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.siminghui.enums.BizCodeEnum;
 import com.siminghui.enums.SendCodeEnum;
 import com.siminghui.mapper.UserMapper;
+import com.siminghui.model.LoginUser;
 import com.siminghui.model.UserDO;
+import com.siminghui.request.UserLoginRequest;
 import com.siminghui.request.UserRegisterRequest;
 import com.siminghui.service.NotifyService;
 import com.siminghui.service.UserService;
 import com.siminghui.util.CommonUtil;
+import com.siminghui.util.JWTUtil;
 import com.siminghui.util.JsonData;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.Md5Crypt;
@@ -17,6 +21,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * @Author: 十七
@@ -78,6 +84,43 @@ public class UserServiceImpl implements UserService {
             return JsonData.buildSuccess();
         } else {
             return JsonData.buildResult(BizCodeEnum.ACCOUNT_REPEAT);
+        }
+
+    }
+
+    /**
+     * 用户登录
+     *
+     * 1.根据mail找有无这条记录
+     * 2.有则用秘钥（盐）+  密码 加密，和数据库密码匹配
+     * @param request
+     * @return
+     */
+    @Override
+    public JsonData login(UserLoginRequest request) {
+
+        List<UserDO> userDOList = userMapper.selectList(new QueryWrapper<UserDO>().eq("mail", request.getMail()));
+
+        if (Objects.nonNull(userDOList) && userDOList.size() == 1) {
+            // 已经注册
+            UserDO userDO = userDOList.get(0);
+            String crypt = Md5Crypt.md5Crypt(request.getPwd().getBytes(), userDO.getSecret());
+
+            if (Objects.equals(crypt, userDO.getPwd())) {
+                // 登陆成功，生成token
+                LoginUser loginUser = new LoginUser();
+                BeanUtils.copyProperties(userDO, loginUser);
+                String token = JWTUtil.geneJsonWebToken(loginUser);
+                // 1. UUID -> token , 存储redis并设置过期时间
+                // 2.JWT
+                return JsonData.buildSuccess(token);
+            } else {
+                return JsonData.buildResult(BizCodeEnum.ACCOUNT_PWD_ERROR);
+            }
+
+        } else {
+            // 未注册
+            return JsonData.buildResult(BizCodeEnum.ACCOUNT_PWD_ERROR);
         }
 
     }

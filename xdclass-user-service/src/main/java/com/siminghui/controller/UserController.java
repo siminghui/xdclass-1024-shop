@@ -2,6 +2,7 @@ package com.siminghui.controller;
 
 
 import com.siminghui.enums.BizCodeEnum;
+import com.siminghui.request.UserLoginRequest;
 import com.siminghui.request.UserRegisterRequest;
 import com.siminghui.service.FileService;
 import com.siminghui.service.UserService;
@@ -9,7 +10,6 @@ import com.siminghui.util.JsonData;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -52,10 +52,19 @@ public class UserController {
     }
 
     @ApiOperation("用户注册")
-    @PostMapping("register")
+    @PostMapping("/register")
     public JsonData register(@ApiParam("用户注册对象") @RequestBody UserRegisterRequest request) {
 
         JsonData jsonData = userService.register(request);
+
+        return jsonData;
+    }
+
+    @ApiOperation("用户登录")
+    @PostMapping("/login")
+    public JsonData login(@ApiParam("用户登录对象") @RequestBody UserLoginRequest request) {
+
+        JsonData jsonData = userService.login(request);
 
         return jsonData;
     }

@@ -68,7 +68,4 @@ public class UserDO implements Serializable {
      */
     private String secret;
 
-    private String testDevTool;
-
-
 }

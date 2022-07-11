@@ -1,5 +1,6 @@
 package com.siminghui.service;
 
+import com.siminghui.request.UserLoginRequest;
 import com.siminghui.request.UserRegisterRequest;
 import com.siminghui.util.JsonData;
 
@@ -17,4 +18,10 @@ public interface UserService {
      */
     JsonData register(UserRegisterRequest request);
 
+    /**
+     * 用户登录
+     * @param request
+     * @return
+     */
+    JsonData login(UserLoginRequest request);
 }
