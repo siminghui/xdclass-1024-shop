@@ -10,24 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/model/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/JWTUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/UserLoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/MapNullTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model/UserDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/model/UserDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/model/UserDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/NotifyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/NotifyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/interceptor/LoginInterceptor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +94,7 @@
       <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.siminghui.interceptor" />
       <recent name="com.siminghui.Biz" />
     </key>
   </component>
@@ -235,7 +221,7 @@
       <workItem from="1656729523326" duration="17569000" />
       <workItem from="1657192677691" duration="743000" />
       <workItem from="1657198720431" duration="589000" />
-      <workItem from="1657268705357" duration="6977000" />
+      <workItem from="1657268705357" duration="10407000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
