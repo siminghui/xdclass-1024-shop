@@ -10,9 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/AddressStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/AddressAddRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/vo/AddressVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/AddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/AddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +41,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -44,6 +58,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -100,8 +117,9 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="open gmc-nurse-station-back-end" />
       <command value="open gmc-third-party-integration" />
+      <command value="open gmc-nurse-station-back-end" />
+      <command value="open hbos-jhemr" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.UserApplication">
@@ -221,7 +239,9 @@
       <workItem from="1656729523326" duration="17569000" />
       <workItem from="1657192677691" duration="743000" />
       <workItem from="1657198720431" duration="589000" />
-      <workItem from="1657268705357" duration="10407000" />
+      <workItem from="1657268705357" duration="17999000" />
+      <workItem from="1657632032406" duration="599000" />
+      <workItem from="1657709718153" duration="2454000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
@@ -260,13 +280,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="5" />
+          <line>131</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -2,7 +2,6 @@ package com.siminghui.config;
 
 import com.siminghui.interceptor.LoginInterceptor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -14,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @Configuration
 @Slf4j
-public class InterceptorConfig implements WebMvcConfigurer  {
+public class InterceptorConfig implements WebMvcConfigurer   {
 
     public LoginInterceptor loginInterceptor() {
         return new LoginInterceptor();
@@ -24,11 +23,10 @@ public class InterceptorConfig implements WebMvcConfigurer  {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor())
                 // 拦截的路径
-                .addPathPatterns("api/user/*/**","api/address/*/**")
+                .addPathPatterns("/api/user/*/**","/api/address/*/**")
                 // 排除不拦截的路径
-                .excludePathPatterns("api/user/*/send_code","api/user/*/captcha",
-                        "api/user/*/register","api/user/*/login","api/user/*/upload");
+                .excludePathPatterns("/api/user/*/send_code","/api/user/*/captcha",
+                        "/api/user/*/register","/api/user/*/login","/api/user/*/upload");
 
-        WebMvcConfigurer.super.addInterceptors(registry);
     }
 }

@@ -7,6 +7,7 @@ import com.siminghui.request.UserRegisterRequest;
 import com.siminghui.service.FileService;
 import com.siminghui.service.UserService;
 import com.siminghui.util.JsonData;
+import com.siminghui.vo.UserVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -67,6 +68,16 @@ public class UserController {
         JsonData jsonData = userService.login(request);
 
         return jsonData;
+    }
+
+    @ApiOperation("个人信息查询")
+    @GetMapping("/detail")
+    public JsonData detail() {
+
+        UserVO userVO = userService.findUserDetail();
+
+        return JsonData.buildSuccess(userVO);
+
     }
 
 }

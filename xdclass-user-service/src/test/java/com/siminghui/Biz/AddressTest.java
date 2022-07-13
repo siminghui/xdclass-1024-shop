@@ -3,6 +3,7 @@ package com.siminghui.Biz;
 import com.siminghui.UserApplication;
 import com.siminghui.model.AddressDO;
 import com.siminghui.service.AddressService;
+import com.siminghui.vo.AddressVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -27,7 +28,7 @@ public class AddressTest {
     @Test
     public void testAddressDetail() {
 
-        AddressDO detail = addressService.detail(1L);
+        AddressVO detail = addressService.detail(1L);
 
         log.info(detail.toString());
         Assert.assertNotNull(detail);

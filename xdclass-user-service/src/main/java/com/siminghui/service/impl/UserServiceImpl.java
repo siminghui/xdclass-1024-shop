@@ -3,6 +3,7 @@ package com.siminghui.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.siminghui.enums.BizCodeEnum;
 import com.siminghui.enums.SendCodeEnum;
+import com.siminghui.interceptor.LoginInterceptor;
 import com.siminghui.mapper.UserMapper;
 import com.siminghui.model.LoginUser;
 import com.siminghui.model.UserDO;
@@ -13,6 +14,7 @@ import com.siminghui.service.UserService;
 import com.siminghui.util.CommonUtil;
 import com.siminghui.util.JWTUtil;
 import com.siminghui.util.JsonData;
+import com.siminghui.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.Md5Crypt;
 import org.apache.commons.lang3.StringUtils;
@@ -123,6 +125,17 @@ public class UserServiceImpl implements UserService {
             return JsonData.buildResult(BizCodeEnum.ACCOUNT_PWD_ERROR);
         }
 
+    }
+
+    @Override
+    public UserVO findUserDetail() {
+        LoginUser loginUser = LoginInterceptor.threadLocal.get();
+
+        UserDO userDO = userMapper.selectOne(new QueryWrapper<UserDO>().eq("id", loginUser.getId()));
+        UserVO userVO = new UserVO();
+        BeanUtils.copyProperties(userDO, userVO);
+
+        return userVO;
     }
 
     /**

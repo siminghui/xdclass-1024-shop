@@ -1,6 +1,10 @@
 package com.siminghui.service;
 
 import com.siminghui.model.AddressDO;
+import com.siminghui.request.AddressAddRequest;
+import com.siminghui.vo.AddressVO;
+
+import java.util.List;
 
 /**
  * @Author: 十七
@@ -9,6 +13,30 @@ import com.siminghui.model.AddressDO;
  */
 public interface AddressService {
 
-    AddressDO detail(Long id);
+    /**
+     * 查找指定地址详情
+     * @param id
+     * @return
+     */
+    AddressVO detail(Long id);
+
+    /**
+     * 新增收货地址
+     * @param addressAddReqeust
+     */
+    void add(AddressAddRequest addressAddReqeust);
+
+    /**
+     * 根据id删除地址
+     * @param addressId
+     * @return
+     */
+    int del(int addressId);
+
+    /**
+     * 查找用户全部收货地址
+     * @return
+     */
+    List<AddressVO> listUserAllAddress();
 
 }

@@ -1,19 +1,20 @@
 package com.siminghui.controller;
 
 
+import com.siminghui.enums.BizCodeEnum;
 import com.siminghui.exception.BizException;
 import com.siminghui.model.AddressDO;
+import com.siminghui.request.AddressAddRequest;
 import com.siminghui.service.AddressService;
 import com.siminghui.util.JsonData;
+import com.siminghui.vo.AddressVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 /**
  * <p>
@@ -31,20 +32,38 @@ public class AddressController {
     @Autowired
     private AddressService addressService;
 
+
+    @ApiOperation("新增收货地址")
+    @PostMapping("add")
+    public JsonData add(@ApiParam("地址对象") @RequestBody AddressAddRequest addressAddReqeust){
+
+        addressService.add(addressAddReqeust);
+
+        return JsonData.buildSuccess();
+    }
+
     @ApiOperation("根据id查找地址详情")
     @GetMapping("find/{address_id}")
-    public Object detail(@ApiParam(value = "地址id",required = true)
-                         @PathVariable("address_id") long addressId) {
+    public Object detail(
+            @ApiParam(value = "地址id",required = true)
+            @PathVariable("address_id") long addressId){
 
-        AddressDO addressDO = addressService.detail(addressId);
+        AddressVO addressVO = addressService.detail(addressId);
 
-        //int i = 1/0;
-        //if (addressId == 1) {
-        //    throw new BizException(-1,"测试自定义异常");
-        //}
+        return addressVO == null ? JsonData.buildResult(BizCodeEnum.ADDRESS_NO_EXITS):JsonData.buildSuccess(addressVO);
+    }
 
-        return JsonData.buildSuccess(addressDO);
+    /**
+     * 查询用户的全部收货地址
+     * @return
+     */
+    @ApiOperation("查询用户的全部收货地址")
+    @GetMapping("/list")
+    public JsonData findUserAllAddress(){
 
+        List<AddressVO> list = addressService.listUserAllAddress();
+
+        return JsonData.buildSuccess(list);
     }
 
 }

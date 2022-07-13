@@ -3,6 +3,7 @@ package com.siminghui.service;
 import com.siminghui.request.UserLoginRequest;
 import com.siminghui.request.UserRegisterRequest;
 import com.siminghui.util.JsonData;
+import com.siminghui.vo.UserVO;
 
 /**
  * @Author: 十七
@@ -24,4 +25,10 @@ public interface UserService {
      * @return
      */
     JsonData login(UserLoginRequest request);
+
+    /**
+     * 查询用户详情
+     * @return
+     */
+    UserVO findUserDetail();
 }
