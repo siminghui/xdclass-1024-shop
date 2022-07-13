@@ -10,23 +10,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/AddressStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/AddressAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/vo/AddressVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/vo/UserVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/AddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/AddressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/CouponApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponRecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/mapper/CouponMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/mapper/CouponRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/model/CouponDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/model/CouponRecordDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/mapper/CouponMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/mapper/CouponRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/test/java/com/simh/db/MyBatisPlusGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/config/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/config/SwaggerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/constant/CacheKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/constant/CacheKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/AddressStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/enums/AddressStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/BizCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/enums/BizCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/enums/SendCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/enums/SendCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/exception/BizException.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/exception/BizException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/exception/CustomExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/model/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/model/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/CheckUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/util/CheckUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/util/CommonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/util/JWTUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/siminghui/util/JsonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/util/JsonData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/config/SwaggerConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/constant/CacheKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/AddressStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/BizCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/enums/SendCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/exception/BizException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/exception/CustomExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/interceptor/LoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/model/LoginUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/util/CheckUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/util/CommonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/util/JWTUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/siminghui/util/JsonData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/component/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/component/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/component/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/component/impl/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/CaptchaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/config/CaptchaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/config/OssConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/config/OssConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/NotifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/controller/NotifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/mapper/AddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/mapper/AddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model/AddressDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/model/AddressDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/model/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/AddressAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/request/AddressAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/UserLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/request/UserLoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/request/UserRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/request/UserRegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/NotifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/NotifyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/NotifyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/NotifyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/vo/AddressVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/vo/AddressVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper/AddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/AddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/simh/biz/AddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/MD5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/simh/biz/MD5Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/simh/biz/MailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/Biz/MapNullTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/simh/biz/MapNullTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/siminghui/db/MyBatisPlusGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/test/java/com/simh/db/MyBatisPlusGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/UserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/component/MailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/component/impl/MailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/config/CaptchaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/config/InterceptorConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/config/OssConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/NotifyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/mapper/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/model/AddressDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/model/UserDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/request/AddressAddRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/request/UserLoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/request/UserRegisterRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/NotifyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/AddressServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/FileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/NotifyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/vo/AddressVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/siminghui/vo/UserVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/mapper/AddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/mapper/AddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/Biz/AddressTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/Biz/MD5Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/Biz/MailTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/Biz/MapNullTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/test-classes/com/siminghui/db/MyBatisPlusGenerator.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +129,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,7 +172,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xdclass-user-service/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -101,16 +188,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller" />
+      <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/mapper" />
+      <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/model" />
       <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service" />
-      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/model" />
-      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/mapper" />
-      <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.simh.db" />
       <recent name="com.siminghui.interceptor" />
       <recent name="com.siminghui.Biz" />
     </key>
@@ -119,16 +208,18 @@
     <option name="myCommands">
       <command value="open gmc-third-party-integration" />
       <command value="open gmc-nurse-station-back-end" />
+      <command value="open xd-class" />
+      <command value="open Alibaba-cloud" />
       <command value="open hbos-jhemr" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.CouponApplication">
     <configuration name="MapNullTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.siminghui.Biz.MapNullTest" />
+      <option name="MAIN_CLASS_NAME" value="com.simh.biz.MapNullTest" />
       <module name="xdclass-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.siminghui.Biz.*" />
+          <option name="PATTERN" value="com.simh.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotifyServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.siminghui.service.impl.NotifyServiceImpl" />
-      <module name="xdclass-user-service" />
+    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simh.db.MyBatisPlusGenerator" />
+      <module name="xdclass-coupon-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.siminghui.service.impl.*" />
+          <option name="PATTERN" value="com.simh.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,30 +255,27 @@
       <module name="xdclass-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.siminghui.Biz.*" />
+          <option name="PATTERN" value="com.simh.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.siminghui.Biz" />
-      <option name="MAIN_CLASS_NAME" value="com.siminghui.Biz.MD5Test" />
+      <option name="PACKAGE_NAME" value="com.simh.biz" />
+      <option name="MAIN_CLASS_NAME" value="com.simh.biz.MD5Test" />
       <option name="METHOD_NAME" value="testMD5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MailTest.testSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xdclass-user-service" />
+    <configuration name="CouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-coupon-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.siminghui.Biz.*" />
+          <option name="PATTERN" value="com.simh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.siminghui.Biz" />
-      <option name="MAIN_CLASS_NAME" value="com.siminghui.Biz.MailTest" />
-      <option name="METHOD_NAME" value="testSendMail" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simh.CouponApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -196,22 +284,22 @@
       <module name="xdclass-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.siminghui.*" />
+          <option name="PATTERN" value="com.simh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.siminghui.UserApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simh.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CouponApplication" />
+        <item itemvalue="Application.MyBatisPlusGenerator" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Application.MapNullTest" />
         <item itemvalue="JUnit.MD5Test.testMD5" />
-        <item itemvalue="Application.NotifyServiceImpl" />
-        <item itemvalue="JUnit.MailTest.testSendMail" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +329,7 @@
       <workItem from="1657198720431" duration="589000" />
       <workItem from="1657268705357" duration="17999000" />
       <workItem from="1657632032406" duration="599000" />
-      <workItem from="1657709718153" duration="2454000" />
+      <workItem from="1657709718153" duration="7753000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
@@ -279,7 +367,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/siminghui/service/impl/UserServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/UserServiceImpl.java</url>
           <line>131</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
