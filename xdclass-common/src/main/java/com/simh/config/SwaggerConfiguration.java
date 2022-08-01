@@ -28,7 +28,7 @@ public class SwaggerConfiguration {
      * 对C端用户的接口文档
      * @return
      */
-    @Bean
+    //@Bean
     public Docket webApiDoc() {
 
         return new Docket((DocumentationType.OAS_30))
@@ -39,7 +39,7 @@ public class SwaggerConfiguration {
                 // 配置文档的元信息
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.siminghui"))
+                .apis(RequestHandlerSelectors.basePackage("com.simh"))
                 // 正则匹配请求路径，并分配到当前项目组
                 .paths(PathSelectors.ant("/api/**"))
                 .build()
@@ -54,7 +54,7 @@ public class SwaggerConfiguration {
      * 对管理端用户的接口文档
      * @return
      */
-    @Bean
+    //@Bean
     public Docket AdminApiDoc() {
 
         return new Docket((DocumentationType.OAS_30))
@@ -65,7 +65,7 @@ public class SwaggerConfiguration {
                 // 配置文档的元信息
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.siminghui"))
+                .apis(RequestHandlerSelectors.basePackage("com.simh"))
                 // 正则匹配请求路径，并分配到当前项目组
                 .paths(PathSelectors.ant("/api/**"))
                 .build();

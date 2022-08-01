@@ -1,5 +1,8 @@
 package com.simh.service;
 
+import com.simh.enums.CouponCategoryEnum;
+import com.simh.util.JsonData;
+
 import java.util.Map;
 
 /**
@@ -17,4 +20,10 @@ public interface CouponService {
      */
     Map<String, Object> pageCouponActivity(int page, int size);
 
+    /**
+     * 领取优惠券
+     * @param couponId
+     * @param promotion
+     */
+    JsonData addCoupon(long couponId, CouponCategoryEnum promotion);
 }
