@@ -10,21 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/enums/CouponStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/config/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/CglibExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/ProxyExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/config/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/config/SwaggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-common/target/classes/com/simh/config/SwaggerConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/target/classes/com/simh/config/SwaggerConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponRecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/service/CouponService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/service/CouponService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/service/impl/CouponServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/service/impl/CouponServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/controller/CouponController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/controller/CouponController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/controller/CouponRecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/controller/CouponRecordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/service/CouponService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/service/CouponService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/service/impl/CouponServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/mapper/CouponMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/com/simh/mapper/CouponMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/mapper/CouponMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/target/classes/mapper/CouponMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -94,6 +85,9 @@
     <property name="project.structure.side.proportion" value="0.3325" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -125,13 +119,13 @@
       <command value="open gmc-nurse-station-back-end" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="MapNullTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simh.biz.MapNullTest" />
+  <component name="RunManager" selected="Application.ProxyExample">
+    <configuration name="CglibExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simh.proxy.CglibExample" />
       <module name="xdclass-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.simh.biz.*" />
+          <option name="PATTERN" value="com.simh.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simh.db.MyBatisPlusGenerator" />
-      <module name="xdclass-coupon-service" />
+    <configuration name="ProxyExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simh.proxy.ProxyExample" />
+      <module name="xdclass-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.simh.db.*" />
+          <option name="PATTERN" value="com.simh.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,13 +159,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyExample" />
+        <item itemvalue="Application.CglibExample" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.CouponApplication" />
-        <item itemvalue="Application.MyBatisPlusGenerator" />
-        <item itemvalue="Application.MapNullTest" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +242,8 @@
       <workItem from="1659001519201" duration="3165000" />
       <workItem from="1659147463409" duration="458000" />
       <workItem from="1659147929871" duration="2517000" />
-      <workItem from="1659352261720" duration="1139000" />
+      <workItem from="1659352261720" duration="8040000" />
+      <workItem from="1659404397909" duration="3019000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
@@ -288,6 +285,34 @@
           <line>131</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/ProxyExample.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/ProxyExample.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
+          <line>707</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/CglibExample.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="16" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="21" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

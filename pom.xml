@@ -139,6 +139,13 @@
                 <version>3.10.1</version>
             </dependency>
 
+            <!-- cglib -->
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
