@@ -24,10 +24,13 @@ import org.redisson.api.RedissonClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -77,6 +80,7 @@ public class CouponServiceImpl implements CouponService {
      * @param category
      * @return
      */
+    @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRED)
     @Override
     public JsonData addCoupon(long couponId, CouponCategoryEnum category) {
 
@@ -85,8 +89,12 @@ public class CouponServiceImpl implements CouponService {
         String lockKey = "lock:coupon:"+couponId;
         RLock rLock = redissonClient.getLock(lockKey);
 
-        //多个线程进入，会阻塞等待释放锁
+        //多个线程进入，会阻塞等待释放锁 默认30s 后续会有watch dog自动续期
         rLock.lock();
+
+        // 加锁10秒钟过期，没有watch dog功能，无法 自动续期
+        rLock.lock(10, TimeUnit.SECONDS);
+
         log.info("领劵接口加锁成功:{}",Thread.currentThread().getId());
         try{
 
