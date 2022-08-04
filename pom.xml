@@ -73,6 +73,26 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>2.7.15</version>
+            </dependency>
+
+<!--            <dependency>-->
+<!--                <groupId>org.apache.dubbo</groupId>-->
+<!--                <artifactId>dubbo</artifactId>-->
+<!--                <version>2.7.15</version>-->
+<!--            </dependency>-->
+
+            <!-- shenyu -->
+            <dependency>
+                <groupId>org.apache.shenyu</groupId>
+                <artifactId>shenyu-spring-boot-starter-client-apache-dubbo</artifactId>
+                <version>2.4.3</version>
+            </dependency>
+
+
             <!--mybatis plus和springboot整合-->
             <dependency>
                 <groupId>com.baomidou</groupId>

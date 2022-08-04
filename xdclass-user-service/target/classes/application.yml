@@ -12,8 +12,15 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.98.179.20/pass_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
-    password: 12345678
-#redis 配置
+    password: a123jiayoua
+
+  #nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  #redis 配置
   redis:
     host: 47.98.179.20
     port: 8000
@@ -28,6 +35,31 @@ spring:
     properties.mail.smtp.starttls.required: true
     properties.mail.smtp.ssl.enable: true
     default-encoding: utf-8
+
+dubbo:
+  scan:
+    base-packages: com.simh.service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://127.0.0.1:8848
+    protocol: nacos
+
+#shenyu
+shenyu:
+  register:
+    register-type: http
+    server-lists: http://127.0.0.1:9095
+    props:
+      username: admin
+      password: 123456
+  client:
+    dubbo:
+      props:
+        contextPath: /simh
+        appName: xd-user-service
+
 
 #配置plus打印sql日志
 mybatis-plus:

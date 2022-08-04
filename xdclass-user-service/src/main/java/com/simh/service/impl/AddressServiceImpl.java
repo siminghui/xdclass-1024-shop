@@ -10,9 +10,10 @@ import com.simh.request.AddressAddRequest;
 import com.simh.service.AddressService;
 import com.simh.vo.AddressVO;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboService;
+import org.apache.shenyu.client.dubbo.common.annotation.ShenyuDubboClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.stream.Collectors;
  * @Date: 2022/4/23 3:21 下午
  * @Description:
  */
-@Service
+@DubboService
 @Slf4j
 public class AddressServiceImpl implements AddressService {
 
@@ -119,5 +120,12 @@ public class AddressServiceImpl implements AddressService {
 
         return addressVOList;
 
+    }
+
+    @Override
+    @ShenyuDubboClient(path = "/test/shenyu", desc = "测试shenyu")
+    public int testDubbo() {
+        System.out.println("testDubbo");
+        return 1;
     }
 }

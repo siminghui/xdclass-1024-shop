@@ -64,5 +64,11 @@ public class AddressController {
         return JsonData.buildSuccess(list);
     }
 
+    @ApiOperation("测试神禹dubbo")
+    @GetMapping("/test/dubbo")
+    public int test(){
+        return addressService.testDubbo();
+    }
+
 }
 

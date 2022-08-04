@@ -38,4 +38,6 @@ public interface AddressService {
      */
     List<AddressVO> listUserAllAddress();
 
+    int testDubbo();
+
 }
