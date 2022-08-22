@@ -9,18 +9,16 @@
     <option name="showLibraryBeans" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/BannerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/mapper/BannerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/model/BannerDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/model/ProductDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/BannerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/BannerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/test/java/com/simh/db/MyBatisPlusGenerator.java" afterDir="false" />
+    <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/vo/BannerVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/BannerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/BannerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/BannerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/BannerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/BannerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/BannerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/BannerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/BannerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/BannerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/impl/BannerServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/siminghui/IdeaProjects/xdclass-1024-shop/xdclass-product-service/src/main/java/com/simh/service",
+    "last_opened_file_path": "/Users/siminghui/IdeaProjects/xdclass-1024-shop/xdclass-product-service/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MavenSettings",
     "show.run.dashboard.notification": "false",
@@ -98,22 +96,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service" />
       <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/model" />
       <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/mapper" />
-      <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller" />
-      <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.simh" />
       <recent name="com.simh.db" />
       <recent name="com.simh.vo" />
       <recent name="com.simh.config" />
       <recent name="com.siminghui.interceptor" />
-      <recent name="com.siminghui.Biz" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -126,7 +124,7 @@
       <command value="open integrated-service-root" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyBatisPlusGenerator">
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -185,22 +183,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisSerialize.testSerializa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xdclass-user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simh.biz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.simh.biz" />
-      <option name="MAIN_CLASS_NAME" value="com.simh.biz.RedisSerialize" />
-      <option name="METHOD_NAME" value="testSerializa" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="xdclass-coupon-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.simh.CouponApplication" />
@@ -214,13 +196,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xdclass-product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simh.ProductApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ProductApplication" />
         <item itemvalue="Application.MyBatisPlusGenerator" />
         <item itemvalue="Spring Boot.CouponApplication" />
         <item itemvalue="JUnit.RedisSerialize.addSecond" />
         <item itemvalue="JUnit.RedisSerialize.testNull" />
-        <item itemvalue="JUnit.RedisSerialize.testSerializa" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +265,7 @@
       <workItem from="1660786073618" duration="1384000" />
       <workItem from="1660895543699" duration="6309000" />
       <workItem from="1661151463697" duration="2805000" />
-      <workItem from="1661165707705" duration="4037000" />
+      <workItem from="1661165707705" duration="6239000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>

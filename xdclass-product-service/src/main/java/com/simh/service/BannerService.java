@@ -2,6 +2,9 @@ package com.simh.service;
 
 import com.simh.model.BannerDO;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.simh.vo.BannerVO;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,6 +14,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author 司明辉
  * @since 2022-08-22
  */
-public interface BannerService extends IService<BannerDO> {
+public interface BannerService{
+
+    List<BannerVO> list();
 
 }
