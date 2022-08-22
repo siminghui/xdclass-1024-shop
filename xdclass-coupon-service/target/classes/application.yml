@@ -36,19 +36,19 @@ spring:
     default-encoding: utf-8
 
 # dubbo
-dubbo:
-  application:
-    name: consumer-server
-    qos-accept-foreign-ip: false
-    qos-enable: false
-  scan:
-    base-packages: com.simh.service
-  protocol:
-    name: dubbo
-    port: -1
-  registry:
-    address: nacos://127.0.0.1:8848
-    protocol: nacos
+#dubbo:
+#  application:
+#    name: consumer-server
+#    qos-accept-foreign-ip: false
+#    qos-enable: false
+#  scan:
+#    base-packages: com.simh.service
+#  protocol:
+#    name: dubbo
+#    port: -1
+#  registry:
+#    address: nacos://127.0.0.1:8848
+#    protocol: nacos
 
 #配置plus打印sql日志
 mybatis-plus:

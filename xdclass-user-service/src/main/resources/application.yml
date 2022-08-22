@@ -47,18 +47,17 @@ dubbo:
     protocol: nacos
 
 #shenyu
-shenyu:
-  register:
-    register-type: http
-    server-lists: http://127.0.0.1:9095
-    props:
-      username: admin
-      password: 123456
-  client:
-    dubbo:
-      props:
-        contextPath: /simh
-        appName: xd-user-service
+#  register:
+#    register-type: http
+#    server-lists: http://127.0.0.1:9095
+#    props:
+#      username: admin
+#      password: 123456
+#  client:
+#    dubbo:
+#      props:
+#        contextPath: /simh
+#        appName: xd-user-service
 
 
 #配置plus打印sql日志

@@ -1,6 +1,7 @@
 package com.simh.service;
 
 import com.simh.enums.CouponCategoryEnum;
+import com.simh.request.NewUserCouponRequest;
 import com.simh.util.JsonData;
 
 import java.util.Map;
@@ -26,4 +27,11 @@ public interface CouponService {
      * @param promotion
      */
     JsonData addCoupon(long couponId, CouponCategoryEnum promotion);
+
+    /**
+     * 新用户注册发放优惠券
+     * @param newUserCouponRequest
+     * @return
+     */
+    JsonData initNewUserCoupon(NewUserCouponRequest newUserCouponRequest);
 }

@@ -2,6 +2,7 @@ package com.simh.controller;
 
 
 import com.simh.enums.CouponCategoryEnum;
+import com.simh.request.NewUserCouponRequest;
 import com.simh.service.CouponService;
 import com.simh.util.JsonData;
 import io.swagger.annotations.Api;
@@ -49,6 +50,12 @@ public class CouponController {
         JsonData jsonData = couponService.addCoupon(couponId, CouponCategoryEnum.PROMOTION);
 
         return jsonData;
+    }
+
+    @ApiOperation("RPC-新用户注册接口")
+    @PostMapping("/new_user_coupon")
+    public JsonData addNewUserCoupon(@ApiParam("用户对象") @RequestBody NewUserCouponRequest newUserCouponRequest) {
+        return couponService.initNewUserCoupon(newUserCouponRequest);
     }
 
 }
