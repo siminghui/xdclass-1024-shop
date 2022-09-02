@@ -43,7 +43,7 @@ public class CartVO {
      * 总价格
      * @return
      */
-    public BigDecimal getTotalPrice() {
+    public BigDecimal getTotalAmount() {
         BigDecimal amount = new BigDecimal(0);
         if (this.cartItemVOList != null) {
             for (CartItemVO cartItemVO : cartItemVOList) {
@@ -59,7 +59,7 @@ public class CartVO {
      * 实际支付价格
      * @return
      */
-    public BigDecimal getRealPayPrice() {
+    public BigDecimal getRealPayAmount() {
         BigDecimal amount = new BigDecimal(0);
         if (this.cartItemVOList != null) {
             for (CartItemVO cartItemVO : cartItemVOList) {

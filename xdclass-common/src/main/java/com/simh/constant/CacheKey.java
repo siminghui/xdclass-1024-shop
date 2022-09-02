@@ -12,4 +12,11 @@ public class CacheKey {
      */
     public static final String CHECK_CODE_KEY = "code:%s:%s";
 
+    /**
+     * 购物车 hash key是用户唯一标识
+     */
+    public static final String CART_KEY = "cart:%s";
+
+
+
 }
