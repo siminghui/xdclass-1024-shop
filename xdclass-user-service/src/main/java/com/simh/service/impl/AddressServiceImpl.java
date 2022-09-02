@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 //import org.apache.shenyu.client.dubbo.common.annotation.ShenyuDubboClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -23,6 +24,7 @@ import java.util.stream.Collectors;
  * @Date: 2022/4/23 3:21 下午
  * @Description:
  */
+@Service
 @Slf4j
 public class AddressServiceImpl implements AddressService {
 

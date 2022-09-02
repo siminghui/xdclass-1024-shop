@@ -36,15 +36,15 @@ spring:
     properties.mail.smtp.ssl.enable: true
     default-encoding: utf-8
 
-dubbo:
-  scan:
-    base-packages: com.simh.service
-  protocol:
-    name: dubbo
-    port: -1
-  registry:
-    address: nacos://127.0.0.1:8848
-    protocol: nacos
+#dubbo:
+#  scan:
+#    base-packages: com.simh.service
+#  protocol:
+#    name: dubbo
+#    port: -1
+#  registry:
+#    address: nacos://127.0.0.1:8848
+#    protocol: nacos
 
 #shenyu
 #  register:

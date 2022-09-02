@@ -18,9 +18,9 @@ import java.util.Objects;
 public class JWTUtil {
 
     /**
-     *  token过期时间，正常是7天，方便测试改为70
+     *  token过期时间，正常是7天，方便测试改为700
      */
-    private static final long EXPIRE = 1000 * 60 * 60 * 24 * 70;
+    private static final long EXPIRE = 1000 * 60 * 60 * 24 * 700;
 
     /**
      * 秘钥
@@ -57,7 +57,7 @@ public class JWTUtil {
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRE))
                 .signWith(SignatureAlgorithm.HS256, SECRET).compact();
 
-        token += TOKEN_PREFIX;
+        token = TOKEN_PREFIX + token;
         return token;
 
     }
