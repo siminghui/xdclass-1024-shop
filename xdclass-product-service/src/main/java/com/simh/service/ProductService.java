@@ -2,6 +2,7 @@ package com.simh.service;
 
 import com.simh.model.ProductDO;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.simh.vo.ProductVO;
 
 import java.util.Map;
 
@@ -18,4 +19,10 @@ public interface ProductService {
      * @return
      */
     Map<String, Object> page(int page, int size);
+
+    /**
+     * 查询商品详情接口
+     * @param productId
+     */
+    ProductVO findDetailById(Long productId);
 }
