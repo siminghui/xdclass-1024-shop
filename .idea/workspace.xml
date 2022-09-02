@@ -10,15 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/ProductApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/vo/BannerVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/BannerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/BannerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/BannerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/BannerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/BannerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/BannerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/BannerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/BannerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/BannerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/impl/BannerServiceImpl.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/vo/ProductVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/impl/ProductServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +81,12 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/siminghui/IdeaProjects/xdclass-1024-shop/xdclass-product-service/src/main/resources",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git",
     "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "e3eadf026a43f00069e1f34d7556b108"
+    "spring.configuration.checksum": "893c6e06c97fc22b0f355bd403b50ec4"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -107,9 +108,9 @@
       <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.simh.vo" />
       <recent name="com.simh" />
       <recent name="com.simh.db" />
-      <recent name="com.simh.vo" />
       <recent name="com.simh.config" />
       <recent name="com.siminghui.interceptor" />
     </key>
@@ -265,7 +266,10 @@
       <workItem from="1660786073618" duration="1384000" />
       <workItem from="1660895543699" duration="6309000" />
       <workItem from="1661151463697" duration="2805000" />
-      <workItem from="1661165707705" duration="6239000" />
+      <workItem from="1661165707705" duration="8639000" />
+      <workItem from="1661248585187" duration="54000" />
+      <workItem from="1661323304515" duration="2176000" />
+      <workItem from="1662037289789" duration="3822000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
@@ -307,24 +311,9 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/ProxyExample.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/ProxyExample.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>707</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/proxy/CglibExample.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
