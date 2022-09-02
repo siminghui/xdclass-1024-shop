@@ -1,6 +1,7 @@
 package com.simh.service;
 
 import com.simh.request.CartItemRequest;
+import com.simh.util.JsonData;
 import com.simh.vo.CartVO;
 
 /**
@@ -25,4 +26,17 @@ public interface CartService {
      * @return
      */
     CartVO getMyCart();
+
+    /**
+     * 删除购物项
+     * @param productId
+     * @return
+     */
+    void deleteItem(Long productId);
+
+    /**
+     * 修改购物车数量
+     * @param cartItemRequest
+     */
+    void changeItemNum(CartItemRequest cartItemRequest);
 }

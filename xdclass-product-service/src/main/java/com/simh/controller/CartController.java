@@ -9,6 +9,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.spring.web.json.Json;
 
 /**
  * @Author: 十七
@@ -43,6 +44,20 @@ public class CartController {
         CartVO cartVO = cartService.getMyCart();
         return JsonData.buildSuccess(cartVO);
 
+    }
+
+    @ApiOperation("删除购物项")
+    @DeleteMapping("/delete/{product_id}")
+    public JsonData deleteItem(@ApiParam(value = "商品id", required = true) @PathVariable("product_id") Long productId) {
+        cartService.deleteItem(productId);
+        return JsonData.buildSuccess();
+    }
+
+    @ApiOperation("修改购物车数量")
+    @PostMapping("/change")
+    public JsonData changeItem(@ApiParam(value = "商品id", required = true) @RequestBody CartItemRequest cartItemRequest) {
+        cartService.changeItemNum(cartItemRequest);
+        return JsonData.buildSuccess();
     }
 
 }

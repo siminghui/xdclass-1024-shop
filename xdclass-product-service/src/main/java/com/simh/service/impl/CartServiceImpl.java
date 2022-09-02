@@ -10,6 +10,7 @@ import com.simh.model.LoginUser;
 import com.simh.request.CartItemRequest;
 import com.simh.service.CartService;
 import com.simh.service.ProductService;
+import com.simh.util.JsonData;
 import com.simh.vo.CartItemVO;
 import com.simh.vo.CartVO;
 import com.simh.vo.ProductVO;
@@ -103,6 +104,31 @@ public class CartServiceImpl implements CartService {
         cartVO.setCartItemVOList(cartItemVOList);
 
         return cartVO;
+    }
+
+    @Override
+    public void deleteItem(Long productId) {
+        BoundHashOperations<String, Object, Object> myCart = getMyCartOps();
+
+        myCart.delete(productId);
+    }
+
+    @Override
+    public void changeItemNum(CartItemRequest cartItemRequest) {
+        BoundHashOperations<String, Object, Object> myCart = getMyCartOps();
+
+        Object cacheObj = myCart.get(cartItemRequest.getProductId());
+        if (cacheObj == null) {
+            return;
+        }
+        String obj = (String)cacheObj;
+
+        CartItemVO cartItemVO = JSON.parseObject(obj, CartItemVO.class);
+
+        cartItemVO.setBuyNum(cartItemRequest.getBuyNum());
+
+        myCart.put(cartItemRequest.getProductId(), JSON.toJSONString(cartItemVO));
+
     }
 
     /**
