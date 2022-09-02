@@ -1,6 +1,7 @@
 package com.simh.service;
 
 import com.simh.request.CartItemRequest;
+import com.simh.vo.CartVO;
 
 /**
  * @Author: 十七
@@ -18,4 +19,10 @@ public interface CartService {
      * 清空购物车
      */
     void clear();
+
+    /**
+     * 查看我的购物车
+     * @return
+     */
+    CartVO getMyCart();
 }

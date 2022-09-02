@@ -3,6 +3,7 @@ package com.simh.controller;
 import com.simh.request.CartItemRequest;
 import com.simh.service.CartService;
 import com.simh.util.JsonData;
+import com.simh.vo.CartVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -34,6 +35,14 @@ public class CartController {
     public JsonData clearMyCart() {
         cartService.clear();
         return JsonData.buildSuccess();
+    }
+
+    @ApiOperation("查看我的购物车")
+    @GetMapping("/myCart")
+    public JsonData findMyCart() {
+        CartVO cartVO = cartService.getMyCart();
+        return JsonData.buildSuccess(cartVO);
+
     }
 
 }

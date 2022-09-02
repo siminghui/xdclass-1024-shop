@@ -28,6 +28,10 @@ public class CartVO {
         return cartItemVOList;
     }
 
+    public void setCartItemVOList(List<CartItemVO> cartItemVOList) {
+        this.cartItemVOList = cartItemVOList;
+    }
+
     /**
      * 总件数
      * @return
