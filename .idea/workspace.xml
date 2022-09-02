@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/target/classes/com/simh/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/vo/CartItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/vo/CartVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +264,7 @@
       <workItem from="1661165707705" duration="8639000" />
       <workItem from="1661248585187" duration="54000" />
       <workItem from="1661323304515" duration="2176000" />
-      <workItem from="1662037289789" duration="4577000" />
+      <workItem from="1662037289789" duration="8189000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
