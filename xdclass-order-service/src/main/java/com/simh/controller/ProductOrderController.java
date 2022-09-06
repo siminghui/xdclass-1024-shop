@@ -1,20 +1,14 @@
 package com.simh.controller;
 
 
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * <p>
- * 订单表 前端控制器
- * </p>
- *
- * @author 司明辉
- * @since 2022-09-05
- */
+@Api("订单模块")
 @RestController
-@RequestMapping("/productOrderDO")
+@RequestMapping("/api/order/v1")
 public class ProductOrderController {
 
 }
