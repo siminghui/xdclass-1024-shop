@@ -6,6 +6,11 @@ spring:
     name: xdclass-order-service
   profiles:
     active: prd
+  #nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.98.179.20:8848
 
   #数据库配置
   datasource:
@@ -14,11 +19,6 @@ spring:
     username: root
     password: a123jiayoua
 
-  #nacos配置
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
   #redis 配置
   redis:
     host: 47.98.179.20

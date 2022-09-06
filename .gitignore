@@ -1,0 +1,28 @@
+target/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.lock
+*.iws
+*.iml
+rebel.xml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+/future-his-service-core/src/main/java/com/xiniu/future/his/service/core/common/annotation
