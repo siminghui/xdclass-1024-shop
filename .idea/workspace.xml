@@ -10,15 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f881983-024e-44f9-ac22-cd1020db1c11" name="Default Changelist" comment="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
-      <change beforePath="$PROJECT_DIR$/xdclass-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/CouponApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/CouponApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-coupon-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-order-service/src/main/java/com/simh/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/java/com/simh/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-order-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/java/com/simh/ProductApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-product-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/fegin/CouponFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/request/NewUserCouponRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/simh/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xdclass-user-service/target/classes/com/simh/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +29,8 @@
       <list>
         <option value="Enum" />
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -81,7 +76,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/siminghui/IdeaProjects/xdclass-1024-shop/xdclass-common/src/main/java/com/simh/enums",
+    "last_opened_file_path": "/Users/siminghui/IdeaProjects/xdclass-1024-shop",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -99,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xdclass-common/src/main/java/com/simh/enums" />
       <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/java/com/simh/model" />
       <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/java/com/simh/mapper" />
       <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/xdclass-product-service/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xdclass-order-service/src/main/java/com/simh/controller" />
@@ -111,11 +106,11 @@
       <recent name="$PROJECT_DIR$/xdclass-user-service/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.simh.request" />
       <recent name="com.simh.db" />
       <recent name="com.simh.config" />
       <recent name="com.simh.vo" />
       <recent name="com.simh" />
-      <recent name="com.siminghui.interceptor" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -126,9 +121,10 @@
       <command value="open hbos-jhemr" />
       <command value="open integrated-service-root" />
       <command value="open gmc-nurse-station-back-end" />
+      <command value="open design-pattern" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderApplication">
+  <component name="RunManager" selected="Spring Boot.CouponApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -209,9 +205,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.CouponApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.ProductApplication" />
         <item itemvalue="Application.MyBatisPlusGenerator (1)" />
       </list>
@@ -267,7 +263,7 @@
       <workItem from="1661248585187" duration="54000" />
       <workItem from="1661323304515" duration="2176000" />
       <workItem from="1662037289789" duration="34450000" />
-      <workItem from="1662447079998" duration="2844000" />
+      <workItem from="1662447079998" duration="5079000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;init project&quot;&#10;&#10;This reverts commit 7792821b">
       <created>1650552574010</created>
@@ -304,14 +300,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/UserServiceImpl.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>707</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-user-service/src/main/java/com/simh/service/impl/UserServiceImpl.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xdclass-coupon-service/src/main/java/com/simh/controller/CouponController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

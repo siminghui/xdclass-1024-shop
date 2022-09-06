@@ -1,12 +1,15 @@
 package com.simh.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.simh.enums.BizCodeEnum;
 import com.simh.enums.SendCodeEnum;
+import com.simh.fegin.CouponFeignService;
 import com.simh.interceptor.LoginInterceptor;
 import com.simh.mapper.UserMapper;
 import com.simh.model.LoginUser;
 import com.simh.model.UserDO;
+import com.simh.request.NewUserCouponRequest;
 import com.simh.request.UserLoginRequest;
 import com.simh.request.UserRegisterRequest;
 import com.simh.service.NotifyService;
@@ -34,6 +37,9 @@ import java.util.Objects;
 @Service
 @Slf4j
 public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private CouponFeignService couponFeignService;
 
     @Autowired
     private NotifyService notifyService;
@@ -145,7 +151,10 @@ public class UserServiceImpl implements UserService {
      */
     private boolean checkUnique(String mail) {
 
-        return true;
+        QueryWrapper<UserDO> queryWrapper = new QueryWrapper<UserDO>().eq("mail", mail);
+        List<UserDO> list = userMapper.selectList(queryWrapper);
+
+        return list.size() > 0 ? false : true;
     }
 
     /**
@@ -153,6 +162,12 @@ public class UserServiceImpl implements UserService {
      * @param userDO
      */
     private void userRegisterInitTask(UserDO userDO) {
+
+        NewUserCouponRequest newUserCouponRequest = new NewUserCouponRequest();
+        newUserCouponRequest.setUserId(userDO.getId());
+        newUserCouponRequest.setName(userDO.getName());
+        JsonData jsonData = couponFeignService.addNewUserCoupon(newUserCouponRequest);
+        log.info("发放新用户注册优惠券，结果:{}", JSONObject.toJSONString(jsonData));
 
     }
 }
