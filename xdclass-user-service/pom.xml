@@ -37,6 +37,11 @@
             <version>3.10.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+        </dependency>
+
         <!--添加nacos客户端-->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.cloud</groupId>-->

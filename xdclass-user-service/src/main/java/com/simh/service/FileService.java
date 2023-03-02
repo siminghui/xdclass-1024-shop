@@ -11,4 +11,6 @@ public interface FileService {
 
     String uploadUserImg(MultipartFile file);
 
+    void testMinio();
+
 }
